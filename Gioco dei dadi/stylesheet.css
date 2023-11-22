@@ -1,0 +1,44 @@
+/*************************************************
+    STILI GENERALI
+ *************************************************/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*************************************************
+    STILI CONTENITORE
+ *************************************************/
+main {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.audimente.it/wp-content/uploads/2017/01/La-psicologia-della-fortuna.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*************************************************
+    STILI GENERALI
+ *************************************************/
+main button {
+    padding: 20px;
+    background-color: chocolate;
+    border: 2px solid gray;
+    box-shadow: 0px 0px 10px 1px #10c616, 1px 1px 10px 1px #03cfdd;
+}
+
+main h1 {
+    color: white;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+main h2 {
+    margin-top: 20px;
+    color: blueviolet;
+}
