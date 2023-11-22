@@ -21,6 +21,9 @@ myForm.addEventListener("submit", (e) => {
         function () {
 
             let checkEmail = userMail.value;
+            let found = false;
+            let risposta = "Non sei idoneo";
+            // document.getElementById("able").innerHTML = "Non sei idoneo";
 
             // controllo che sia nella lista di chi puo' accedere (ovvero condizione)
             for (let i = 0; i < emailList.length; i++) {
@@ -30,13 +33,14 @@ myForm.addEventListener("submit", (e) => {
 
                 if (numIesimo === checkEmail) {
                     //Se sono nel primo caso per l'email, sono idoneo
-                    document.getElementById("able").innerHTML = "Sei idoneo";
-
-                } else {
-                    //Se sono nel primo caso per l'email, non sono idoneo
-                    document.getElementById("able").innerHTML = "Non sei idoneo";
+                    // document.getElementById("able").innerHTML = "Sei idoneo";
+                    found = true;
                 }
 
+                if (found === true) {
+                    risposta = "Sei idoneo";
+                }
+                document.getElementById("able").innerHTML = risposta;
             }
 
         }
