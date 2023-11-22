@@ -1,0 +1,43 @@
+/*************************************************
+    STILI GENERALI
+ *************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*************************************************
+    STILI CONTENITORE
+ *************************************************/
+main {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+/*************************************************
+    SETUP TEXT
+ *************************************************/
+.container h3 {
+    margin-top: 30px;
+    color: red;
+}
+
+form button {
+    background-color: blueviolet;
+    border: 2px solid black;
+    padding: 3px;
+}
